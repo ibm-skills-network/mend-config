@@ -1,3 +1,22 @@
 {
-  "settingsInheritedFrom": "ibm-mend-config/mend-config@main"
+  "settingsInheritedFrom": "ibm-mend-config/mend-config@main",
+  "overrideConfigAllowList": [],
+  "scanSettings": {
+    "configMode": "EXTERNAL",
+    "configExternalURL": "https://raw.githubusercontent.com/ibm-skills-network/mend-config/main/whitesource.config",
+    "baseBranches": ["master", "main", "6.x.x", "5.x.x"],
+    "exploitability": true,
+    "enableIaC": true
+  },
+  "checkRunSettings": {
+    "strictMode": true
+  },
+  "issueSettings": {
+    "issueRepoName": "security-compliance-automation"
+  },
+  "remediateSettings": {
+    "enableRenovate": true,
+    "extends": ["config:recommended"],
+    "transitiveRemediation": true
+  }
 }
