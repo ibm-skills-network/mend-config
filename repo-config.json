@@ -5,8 +5,7 @@
     "configMode": "EXTERNAL",
     "configExternalURL": "https://raw.githubusercontent.com/ibm-skills-network/mend-config/main/whitesource.config",
     "baseBranches": ["master", "main", "6.x.x", "5.x.x"],
-    "exploitability": true,
-    "enableIaC": true
+    "exploitability": true
   },
   "checkRunSettings": {
     "strictMode": true
@@ -16,7 +15,7 @@
   },
   "remediateSettings": {
     "enableRenovate": true,
-    "extends": ["config:recommended"],
+    "extends": ["config:recommended docker:disable"],
     "transitiveRemediation": true
   }
 }
