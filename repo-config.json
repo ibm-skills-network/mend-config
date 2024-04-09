@@ -15,7 +15,10 @@
   },
   "remediateSettings": {
     "enableRenovate": true,
-    "extends": ["config:recommended docker:disable"],
+    "extends": [
+      "config:recommended",
+      "docker:disable"
+    ],
     "transitiveRemediation": true
   }
 }
