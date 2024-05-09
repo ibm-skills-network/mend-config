@@ -17,6 +17,7 @@
     "enableRenovate": true,
     "extends": [
       "config:recommended",
+      ":disableMajorUpdates",
       "docker:disable"
     ],
     "transitiveRemediation": true
