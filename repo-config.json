@@ -4,7 +4,6 @@
   "scanSettings": {
     "configMode": "EXTERNAL",
     "configExternalURL": "https://raw.githubusercontent.com/ibm-skills-network/mend-config/main/whitesource.config",
-    "baseBranches": ["master", "main", "6.x.x", "5.x.x"],
     "exploitability": true
   },
   "checkRunSettings": {
