@@ -1,14 +1,5 @@
 {
   "settingsInheritedFrom": "ibm-mend-config/mend-config@main",
   "repoConfigMode": "pushwhitesourceFile",
-  "CVSSv3": true,
-  "ignoredRepos": {
-    "exactNames": [
-      "ibm-skills-network/cube",
-      "ibm-skills-network/cloud-ide",
-      "ibm-skills-network/theia-full",
-      "ibm-skills-network/jupyterlab",
-      "ibm-skills-network/rstudio"
-    ]
-  }
+  "CVSSv3": true
 }
