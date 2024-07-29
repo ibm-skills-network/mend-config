@@ -7,7 +7,8 @@
     "exploitability": true
   },
   "checkRunSettings": {
-    "strictMode": true
+    "strictMode": "warning",
+    "strictModeInfo": true
   },
   "issueSettings": {
     "issueRepoName": "security-compliance-automation"
