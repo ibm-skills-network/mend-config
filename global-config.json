@@ -1,5 +1,8 @@
 {
   "settingsInheritedFrom": "ibm-mend-config/mend-config@main",
   "repoConfigMode": "pushwhitesourceFile",
-  "CVSSv3": true
+  "CVSSv3": true,
+  "scanSettingsSAST": {
+    "enableScan": true
+  }
 }
