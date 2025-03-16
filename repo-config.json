@@ -1,12 +1,10 @@
 {
   "settingsInheritedFrom": "ibm-mend-config/mend-config@main",
-  "overrideConfigAllowList": [],
+  "overrideConfigAllowList": null,
   "scanSettings": {
     "configMode": "EXTERNAL",
     "configExternalURL": "https://raw.githubusercontent.com/ibm-skills-network/mend-config/main/whitesource.config",
-    "exploitability": true,
-    "enableSAST": true,
-    "baseBranches": ["main","master"]
+    "exploitability": true
   },
   "checkRunSettings": {
     "strictMode": "warning",
@@ -23,5 +21,22 @@
       "docker:disable"
     ],
     "transitiveRemediation": true
+  },
+  "scanSettingsSAST": {
+    "enableScan": true,
+    "scanPullRequests": true,
+    "incrementalScan": true,
+    "baseBranches": [
+      "main",
+      "master"
+    ]
+  },
+  "checkRunSettingsSAST": {
+    "checkRunConclusionLevel": "failure",
+    "severityThreshold": "high"
+  },
+  "issueSettingsSAST": {
+    "issueType": "repo",
+    "minSeverityLevel": "high"
   }
 }
