@@ -10,9 +10,6 @@
     "strictMode": "warning",
     "strictModeInfo": true
   },
-  "issueSettings": {
-    "issueRepoName": "security-compliance-automation"
-  },
   "remediateSettings": {
     "enableRenovate": true,
     "extends": [
