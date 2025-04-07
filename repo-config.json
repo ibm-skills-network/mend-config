@@ -26,7 +26,8 @@
     "baseBranches": [
       "main",
       "master"
-    ]
+    ],
+    "snippetSize": 20
   },
   "checkRunSettingsSAST": {
     "checkRunConclusionLevel": "failure",
