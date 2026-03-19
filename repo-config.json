@@ -12,6 +12,8 @@
   },
   "remediateSettings": {
     "enableRenovate": true,
+    "schedule": ["* 0-7 * * 1-5", "* 18-23 * * 1-5", "* * * * 0,6"],
+    "timezone": "America/Toronto",
     "extends": [
       "config:recommended",
       ":disableMajorUpdates",
