@@ -19,7 +19,11 @@
       ":disableMajorUpdates",
       "docker:disable"
     ],
-    "transitiveRemediation": true
+    "transitiveRemediation": true,
+    "lockFileMaintenance": {
+      "enabled": true,
+      "extends": ["schedule:weekly"]
+    }
   },
   "scanSettingsSAST": {
     "enableScan": true,
