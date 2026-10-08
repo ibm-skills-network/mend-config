@@ -5,8 +5,9 @@
 `repo-config.json` `remediateSettings.schedule` (weekdays 00:00-07:59 and 18:00-23:59
 Toronto, all weekend) is what the remediation tool in
 `ibm-skills-network/security-compliance-automation` is scheduled around: its remediate job
-runs at `0 13 * * 1-5` (09:00 Toronto, weekdays), after this window. Do not change this
-schedule or `timezone` without checking that cron (see that repository's `CLAUDE.md`).
+runs at `0 14 * * 1-5` in UTC, which is 09:00 EST / 10:00 EDT, at least an hour after this
+window. Do not change this schedule or `timezone` without checking that cron (see that
+repository's `CLAUDE.md`).
 
 Why: Renovate and the remediation tool edit the same `package.json` and lockfiles in the
 same repositories.
