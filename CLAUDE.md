@@ -21,3 +21,11 @@ The override entries the remediation tool writes are caret ranges on purpose, so
 can keep them current within the range. `:disableMajorUpdates` in `extends` is also relied
 on elsewhere: the org's `dependency-auto-merge.yml` has no major-version gate for Renovate
 because of it.
+
+## Root `.tool-versions` is ignored by Renovate
+
+The `packageRules` entry disabling updates to the root `.tool-versions` is a
+stopgap: those bumps need code-owner review, so they could never auto-merge, and the
+CODEOWNERS sync that would exempt the file (`github-sync teams-and-codeowners` in
+security-compliance-automation) no longer runs. Runtime upgrades there are manual until
+that sync is fixed. `terraform/.tool-versions` is not matched and still gets PRs.

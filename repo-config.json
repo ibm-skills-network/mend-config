@@ -19,6 +19,12 @@
       ":disableMajorUpdates",
       "docker:disable"
     ],
+    "packageRules": [
+      {
+        "matchFileNames": [".tool-versions"],
+        "enabled": false
+      }
+    ],
     "transitiveRemediation": true,
     "lockFileMaintenance": {
       "enabled": true,
