@@ -1,0 +1,24 @@
+{
+  "repositories": [
+    {
+      "fullName": "ibm-skills-network/support",
+      "branchName": "investigation-concluded-email",
+      "uploadScannerLogs": false
+    },
+    {
+      "fullName": "ibm-skills-network/support",
+      "branchName": "investigation-pauses-autoclose",
+      "uploadScannerLogs": false
+    },
+    {
+      "fullName": "ibm-skills-network/support",
+      "branchName": "resolve-closes-jira",
+      "uploadScannerLogs": false
+    },
+    {
+      "fullName": "ibm-skills-network/support",
+      "branchName": "investigation-new",
+      "uploadScannerLogs": false
+    }
+  ]
+}
